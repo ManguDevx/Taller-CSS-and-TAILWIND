@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout y posicionamiento</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-200 flex items-center justify-center">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6 mt-3 mb-3 justify-center">
+
+        <a href="index.html" class="fixed top-4 left-4 z-50 bg-gray-900 text-green-400 hover:bg-gray-800 p-3 rounded-lg text-center transition">
+            Regresar
+        </a>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Display</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="flex items-center justify-center gap-2 w-32 h-32 bg-gray-300"><div class="w-8 h-8 bg-black"></div><div class="w-8 h-8 bg-blue-400 hidden"></div><div class="w-8 h-8 bg-pink-400"></div></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">hidden</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Position</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="relative flex items-center justify-center w-32 h-32 bg-gray-300"><div class="w-8 h-8 bg-black static"></div></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">static</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Top</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="relative flex items-center justify-center w-32 h-32 bg-gray-300"><div class="absolute w-8 h-8 bg-black top-0"></div></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">top-0</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Right</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="relative flex items-center justify-center w-32 h-32 bg-gray-300"><div class="absolute w-8 h-8 bg-black right-0"></div></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">right-0</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Bottom</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="relative flex items-center justify-center w-32 h-32 bg-gray-300"><div class="absolute w-8 h-8 bg-black bottom-0"></div></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">bottom-0</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Left</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="relative flex items-center justify-center w-32 h-32 bg-gray-300"><div class="absolute w-8 h-8 bg-black left-0"></div></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">left-0</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Z-index</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="relative w-32 h-32 bg-gray-300"><div class="absolute top-4 left-4 w-16 h-16 bg-black z-10"></div><div class="absolute top-12 left-12 w-16 h-16 bg-blue-400"></div></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">z-10</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Inset</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="relative w-32 h-32 bg-gray-300"><div class="absolute bg-black/50 inset-0"></div></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">inset-0</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Inset-x</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="relative flex items-center justify-center w-32 h-32 bg-gray-300"><div class="absolute h-8 bg-black inset-x-0"></div></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">inset-x-0</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Inset-y</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="relative flex items-center justify-center w-32 h-32 bg-gray-300"><div class="absolute w-8 bg-black inset-y-0"></div></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">inset-y-0</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Inset-x-auto</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="relative flex items-center justify-center w-32 h-32 bg-gray-300"><div class="absolute w-8 h-8 bg-black inset-x-auto"></div></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">inset-x-auto</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Inset-y-auto</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="relative flex items-center justify-center w-32 h-32 bg-gray-300"><div class="absolute w-8 h-8 bg-black inset-y-auto"></div></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">inset-y-auto</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Float</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 p-2 overflow-hidden bg-gray-300 text-xs"><div class="w-12 h-12 bg-black float-left"></div>Texto de ejemplo que rodea al elemento flotante.</div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">float-left</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Clear</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 p-2 overflow-hidden bg-gray-300 text-xs"><div class="w-10 h-10 bg-blue-400 float-left"></div><div class="w-10 h-10 bg-black float-right"></div><p class="clear-left">Texto debajo</p></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">clear-left</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Flex</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-gray-300 flex"><div class="w-8 h-8 bg-black"></div><div class="w-8 h-8 bg-blue-400"></div><div class="w-8 h-8 bg-pink-400"></div></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">flex</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Flex-direction</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-gray-300 flex flex-col"><div class="w-8 h-8 bg-black"></div><div class="w-8 h-8 bg-blue-400"></div><div class="w-8 h-8 bg-pink-400"></div></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">flex-col</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Flex-wrap</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-gray-300 flex flex-wrap"><div class="w-16 h-8 bg-black"></div><div class="w-16 h-8 bg-blue-400"></div><div class="w-16 h-8 bg-pink-400"></div><div class="w-16 h-8 bg-black"></div><div class="w-16 h-8 bg-blue-400"></div></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">flex-wrap</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Flex-shrink</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="flex w-32 h-32 bg-gray-300"><div class="w-32 h-8 bg-black flex-shrink-0"></div><div class="w-32 h-8 bg-blue-400"></div></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">flex-shrink-0</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Flex-grow</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="flex w-32 h-32 bg-gray-300"><div class="w-8 h-8 bg-black"></div><div class="h-8 bg-blue-400 flex-grow"></div></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">flex-grow</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Flex-basis</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="flex w-32 h-32 bg-gray-300"><div class="h-8 bg-black flex-basis-1/4"></div><div class="w-8 h-8 bg-blue-400"></div></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">flex-basis-1/4</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Justify-content</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-gray-300 flex justify-between"><div class="w-8 h-8 bg-black"></div><div class="w-8 h-8 bg-blue-400"></div><div class="w-8 h-8 bg-pink-400"></div></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">justify-between</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Align-items</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-gray-300 flex items-center"><div class="w-8 h-8 bg-black"></div><div class="w-8 h-8 bg-blue-400"></div><div class="w-8 h-8 bg-pink-400"></div></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">items-center</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Align-self</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="flex w-32 h-32 bg-gray-300"><div class="w-8 h-8 bg-black self-center"></div></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">self-center</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Align-content</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-gray-300 flex flex-wrap content-center"><div class="w-16 h-6 bg-black"></div><div class="w-16 h-6 bg-blue-400"></div><div class="w-16 h-6 bg-pink-400"></div><div class="w-16 h-6 bg-black"></div></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">content-center</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Justify-items</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-gray-300 grid grid-cols-2 justify-items-center"><div class="w-8 h-8 bg-black"></div><div class="w-8 h-8 bg-blue-400"></div><div class="w-8 h-8 bg-pink-400"></div><div class="w-8 h-8 bg-black"></div></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">justify-items-center</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Justify-self</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="grid w-32 h-32 bg-gray-300"><div class="w-8 h-8 bg-black justify-self-center"></div></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">justify-self-center</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Place-content</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-gray-300 grid place-content-center"><div class="w-8 h-8 bg-black"></div><div class="w-8 h-8 bg-blue-400"></div></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">place-content-center</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Place-items</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-gray-300 grid place-items-center"><div class="w-8 h-8 bg-black"></div></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">place-items-center</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Place-self</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="grid w-32 h-32 bg-gray-300"><div class="w-8 h-8 bg-black place-self-center"></div></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">place-self-center</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Order</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="flex w-32 h-32 bg-gray-300"><div class="w-8 h-8 bg-black order-1"></div><div class="w-8 h-8 bg-blue-400"></div><div class="w-8 h-8 bg-pink-400"></div></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">order-1</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Grid</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-gray-300 grid"><div class="w-8 h-8 bg-black"></div><div class="w-8 h-8 bg-blue-400"></div><div class="w-8 h-8 bg-pink-400"></div></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">grid</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Grid-template-columns</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-gray-300 grid grid-cols-3"><div class="h-8 bg-black"></div><div class="h-8 bg-blue-400"></div><div class="h-8 bg-pink-400"></div><div class="h-8 bg-black"></div><div class="h-8 bg-blue-400"></div><div class="h-8 bg-pink-400"></div></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">grid-cols-3</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Grid-template-rows</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-gray-300 grid grid-flow-col grid-rows-3"><div class="w-8 bg-black"></div><div class="w-8 bg-blue-400"></div><div class="w-8 bg-pink-400"></div><div class="w-8 bg-black"></div><div class="w-8 bg-blue-400"></div><div class="w-8 bg-pink-400"></div></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">grid-rows-3</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Grid-cols</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-gray-300 grid grid-cols-4"><div class="h-8 bg-black"></div><div class="h-8 bg-blue-400"></div><div class="h-8 bg-pink-400"></div><div class="h-8 bg-black"></div><div class="h-8 bg-blue-400"></div><div class="h-8 bg-pink-400"></div><div class="h-8 bg-black"></div><div class="h-8 bg-blue-400"></div></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">grid-cols-4</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Grid-rows</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-gray-300 grid grid-flow-col grid-rows-3"><div class="w-8 bg-black"></div><div class="w-8 bg-blue-400"></div><div class="w-8 bg-pink-400"></div><div class="w-8 bg-black"></div><div class="w-8 bg-blue-400"></div><div class="w-8 bg-pink-400"></div></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">grid-rows-3</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Grid-auto-flow</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-gray-300 grid grid-flow-col"><div class="w-8 h-8 bg-black"></div><div class="w-8 h-8 bg-blue-400"></div><div class="w-8 h-8 bg-pink-400"></div></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">grid-flow-col</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Grid-auto-columns</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-gray-300 grid grid-flow-col grid-cols-auto"><div class="w-8 h-8 bg-black"></div><div class="w-8 h-8 bg-blue-400"></div><div class="w-8 h-8 bg-pink-400"></div></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">grid-cols-auto</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Grid-auto-rows</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-gray-300 grid auto-rows-auto"><div class="w-8 h-8 bg-black"></div><div class="w-8 h-8 bg-blue-400"></div><div class="w-8 h-8 bg-pink-400"></div></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">auto-rows-auto</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Auto-cols</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-gray-300 grid grid-flow-col auto-cols-auto"><div class="w-8 h-8 bg-black"></div><div class="w-8 h-8 bg-blue-400"></div><div class="w-8 h-8 bg-pink-400"></div></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">auto-cols-auto</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Auto-rows</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-gray-300 grid auto-rows-auto"><div class="w-8 h-8 bg-black"></div><div class="w-8 h-8 bg-blue-400"></div><div class="w-8 h-8 bg-pink-400"></div></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">auto-rows-auto</span>
+    </div>
+
+</div>
+</body>
+</html>

@@ -1,25 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS && TAILWIND</title>
+    <title>TAILWIND</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class="bg-red-500">
-    <h1 class="h-92 flex items-center justify-center text-[60px] text-white">TALLER CSS AND TAILWIND</h1>
+<body class="min-h-screen bg-gray-100 flex flex-col items-center justify-center px-6 py-10">
 
-    <div class="flex items-center justify-center h-92">
-        <button class="bg-blue-200 w-34 h-12" ><a href="col_tipo.html">Colores y tipografía</a></button>
-        <button class="bg-blue-200 w-34 h-12">Apariencia y efectos</button>
-        <button class="bg-blue-200 w-34 h-12">Espaciado y dimensiones</button>
-        <button class="bg-blue-200 w-34 h-12">Layout y posicionamiento</button>
-        <button class="bg-blue-200 w-34 h-12">Transformaciones y animaciones</button>
-        <button class="bg-blue-200 w-34 h-12">Interactividad y texto avanzado</button>
-        
+    <h1 class="text-4xl md:text-6xl font-bold text-gray-900 text-center">
+        TALLER TAILWIND CSS
+    </h1>
+
+    <p class="mt-4 text-gray-500 text-center">
+        Elige un tema para ver los ejemplos
+    </p>
+
+    <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-4xl">
+
+        <a href="1_col_tipo.html" class="bg-gray-900 hover:bg-gray-800 text-green-400 font-semibold text-center rounded-xl shadow-lg p-6 transition hover:-translate-y-1">
+            Colores y tipografía
+        </a>
+
+        <a href="2_apa_efe.html" class="bg-gray-900 hover:bg-gray-800 text-green-400 font-semibold text-center rounded-xl shadow-lg p-6 transition hover:-translate-y-1">
+            Apariencia y efectos
+        </a>
+
+        <a href="3_espa_dim.html" class="bg-gray-900 hover:bg-gray-800 text-green-400 font-semibold text-center rounded-xl shadow-lg p-6 transition hover:-translate-y-1">
+            Espaciado y dimensiones
+        </a>
+
+        <a href="4_lay_pos.html" class="bg-gray-900 hover:bg-gray-800 text-green-400 font-semibold text-center rounded-xl shadow-lg p-6 transition hover:-translate-y-1">
+            Layout y posicionamiento
+        </a>
+
+        <a href="5_tran_ani.html" class="bg-gray-900 hover:bg-gray-800 text-green-400 font-semibold text-center rounded-xl shadow-lg p-6 transition hover:-translate-y-1">
+            Transformaciones y animaciones
+        </a>
+
+        <a href="6_int_text_ava.html" class="bg-gray-900 hover:bg-gray-800 text-green-400 font-semibold text-center rounded-xl shadow-lg p-6 transition hover:-translate-y-1">
+            Interactividad y texto avanzado
+        </a>
+
     </div>
+
+    <footer class="mt-12 text-gray-500 text-sm">
+        Hecho con amor y cariño.
+    </footer>
 </body>
 </html>
-
-

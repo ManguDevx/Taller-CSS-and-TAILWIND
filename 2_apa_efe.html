@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apariencia y efectos</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-200 flex items-center justify-center">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6 mt-3 mb-3 justify-center">
+
+        <a href="index.html" class="fixed top-4 left-4 z-50 bg-gray-900 text-green-400 hover:bg-gray-800 p-3 rounded-lg text-center transition">
+            Regresar
+        </a>
+
+        <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+            <h1 class="font-bold text-center">Box-shadow</h1>
+            <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 shadow-lg"></div></div>
+            <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+            <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">shadow-lg</span>
+        </div>
+
+        <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+            <h1 class="font-bold text-center">Opacity</h1>
+            <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 opacity-75"></div></div>
+            <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+            <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">opacity-75</span>
+        </div>
+
+        <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+            <h1 class="font-bold text-center">Border-radius</h1>
+            <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 rounded-lg"></div></div>
+            <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+            <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">rounded-lg</span>
+        </div>
+
+        <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+            <h1 class="font-bold text-center">Border-width</h1>
+            <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 border-blue-400 border-4"></div></div>
+            <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+            <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">border-4</span>
+        </div>
+
+        <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+            <h1 class="font-bold text-center">Border-style</h1>
+            <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 border-4 border-blue-400 border-dashed"></div></div>
+            <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+            <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">border-dashed</span>
+        </div>
+
+        <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+            <h1 class="font-bold text-center">Border-collapse</h1>
+            <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center">
+                <table class="w-32 h-32 bg-black text-blue-400 border-collapse"><tr><td class="border-2 border-blue-400"></td><td class="border-2 border-blue-400"></td></tr><tr><td class="border-2 border-blue-400"></td><td class="border-2 border-blue-400"></td></tr></table>
+            </div>
+            <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+            <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">border-collapse</span>
+        </div>
+
+        <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+            <h1 class="font-bold text-center">Border-spacing</h1>
+            <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center">
+                <table class="w-32 h-32 bg-black text-blue-400 border-separate border-spacing-4"><tr><td class="border-2 border-blue-400"></td><td class="border-2 border-blue-400"></td></tr><tr><td class="border-2 border-blue-400"></td><td class="border-2 border-blue-400"></td></tr></table>
+            </div>
+            <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+            <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">border-separate border-spacing-4</span>
+        </div>
+
+        <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+            <h1 class="font-bold text-center">Outline</h1>
+            <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><button class="w-32 h-32 bg-black text-blue-400 outline-none"></button></div>
+            <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+            <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">outline-none</span>
+        </div>
+
+        <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+            <h1 class="font-bold text-center">Filter</h1>
+            <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-blue-400 text-blue-400 filter grayscale-50"></div></div>
+            <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+            <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">filter grayscale-50</span>
+        </div>
+
+        <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+            <h1 class="font-bold text-center">Backdrop-filter</h1>
+            <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center">
+                <div class="relative w-32 h-32 flex"><div class="w-1/2 bg-yellow-500"></div><div class="w-1/2 bg-pink-400"></div><div class="absolute inset-8 bg-black/30 backdrop-filter blur-10"></div></div>
+            </div>
+            <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+            <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">backdrop-filter blur-10</span>
+        </div>
+
+        <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+            <h1 class="font-bold text-center">Backdrop-filter-opacity</h1>
+            <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center">
+                <div class="relative w-32 h-32 flex"><div class="w-1/2 bg-yellow-500"></div><div class="w-1/2 bg-pink-400"></div><div class="absolute inset-8 bg-black/30 backdrop-opacity-50"></div></div>
+            </div>
+            <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+            <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">backdrop-opacity-50</span>
+        </div>
+
+        <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+            <h1 class="font-bold text-center">Backdrop-blur</h1>
+            <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center">
+                <div class="relative w-32 h-32 flex"><div class="w-1/2 bg-yellow-500"></div><div class="w-1/2 bg-pink-400"></div><div class="absolute inset-8 bg-black/30 backdrop-blur-8"></div></div>
+            </div>
+            <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+            <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">backdrop-blur-8</span>
+        </div>
+
+        <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+            <h1 class="font-bold text-center">Backdrop-brightness</h1>
+            <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center">
+                <div class="relative w-32 h-32 flex"><div class="w-1/2 bg-yellow-500"></div><div class="w-1/2 bg-pink-400"></div><div class="absolute inset-8 bg-black/30 backdrop-brightness-75"></div></div>
+            </div>
+            <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+            <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">backdrop-brightness-75</span>
+        </div>
+
+        <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+            <h1 class="font-bold text-center">Backdrop-contrast</h1>
+            <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center">
+                <div class="relative w-32 h-32 flex"><div class="w-1/2 bg-yellow-500"></div><div class="w-1/2 bg-pink-400"></div><div class="absolute inset-8 bg-black/30 backdrop-contrast-125"></div></div>
+            </div>
+            <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+            <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">backdrop-contrast-125</span>
+        </div>
+
+        <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+            <h1 class="font-bold text-center">Backdrop-grayscale</h1>
+            <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center">
+                <div class="relative w-32 h-32 flex"><div class="w-1/2 bg-yellow-500"></div><div class="w-1/2 bg-pink-400"></div><div class="absolute inset-8 bg-black/30 backdrop-grayscale-50"></div></div>
+            </div>
+            <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+            <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">backdrop-grayscale-50</span>
+        </div>
+
+        <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+            <h1 class="font-bold text-center">Backdrop-hue-rotate</h1>
+            <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center">
+                <div class="relative w-32 h-32 flex"><div class="w-1/2 bg-yellow-500"></div><div class="w-1/2 bg-pink-400"></div><div class="absolute inset-8 bg-black/30 backdrop-hue-rotate-90"></div></div>
+            </div>
+            <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+            <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">backdrop-hue-rotate-90</span>
+        </div>
+
+        <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+            <h1 class="font-bold text-center">Backdrop-invert</h1>
+            <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center">
+                <div class="relative w-32 h-32 flex"><div class="w-1/2 bg-yellow-500"></div><div class="w-1/2 bg-pink-400"></div><div class="absolute inset-8 bg-black/30 backdrop-invert"></div></div>
+            </div>
+            <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+            <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">backdrop-invert</span>
+        </div>
+
+        <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+            <h1 class="font-bold text-center">Backdrop-opacity</h1>
+            <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center">
+                <div class="relative w-32 h-32 flex"><div class="w-1/2 bg-yellow-500"></div><div class="w-1/2 bg-pink-400"></div><div class="absolute inset-8 bg-black/30 backdrop-opacity-50"></div></div>
+            </div>
+            <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+            <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">backdrop-opacity-50</span>
+        </div>
+
+        <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+            <h1 class="font-bold text-center">Backdrop-saturate</h1>
+            <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center">
+                <div class="relative w-32 h-32 flex"><div class="w-1/2 bg-yellow-500"></div><div class="w-1/2 bg-pink-400"></div><div class="absolute inset-8 bg-black/30 backdrop-saturate-150"></div></div>
+            </div>
+            <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+            <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">backdrop-saturate-150</span>
+        </div>
+
+        <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+            <h1 class="font-bold text-center">Backdrop-sepia</h1>
+            <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center">
+                <div class="relative w-32 h-32 flex"><div class="w-1/2 bg-yellow-500"></div><div class="w-1/2 bg-pink-400"></div><div class="absolute inset-8 bg-black/30 backdrop-sepia-50"></div></div>
+            </div>
+            <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+            <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">backdrop-sepia-50</span>
+        </div>
+
+        <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+            <h1 class="font-bold text-center">Mix-blend-mode</h1>
+            <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center">
+                <div class="flex items-center justify-center w-32 h-32 bg-yellow-500"><div class="w-16 h-16 bg-blue-400 mix-blend-screen"></div></div>
+            </div>
+            <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+            <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">mix-blend-screen</span>
+        </div>
+
+        <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+            <h1 class="font-bold text-center">Clip-path</h1>
+            <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 clip-full"></div></div>
+            <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+            <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">clip-full</span>
+        </div>
+
+        <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+            <h1 class="font-bold text-center">Will-change</h1>
+            <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 will-change-transform"></div></div>
+            <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+            <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">will-change-transform</span>
+        </div>
+
+        <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+            <h1 class="font-bold text-center">Isolation</h1>
+            <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 isolation-isolate"></div></div>
+            <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+            <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">isolation-isolate</span>
+        </div>
+
+        <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+            <h1 class="font-bold text-center">Shape-outside</h1>
+            <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 shape-outside"></div></div>
+            <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+            <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">shape-outside</span>
+        </div>
+
+        <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+            <h1 class="font-bold text-center">Border</h1>
+            <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 border-blue-400 border"></div></div>
+            <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+            <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">border</span>
+        </div>
+
+        <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+            <h1 class="font-bold text-center">Border-top</h1>
+            <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 border-blue-400 border-t-2"></div></div>
+            <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+            <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">border-t-2</span>
+        </div>
+
+        <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+            <h1 class="font-bold text-center">Border-right</h1>
+            <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 border-blue-400 border-r-4"></div></div>
+            <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+            <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">border-r-4</span>
+        </div>
+
+        <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+            <h1 class="font-bold text-center">Border-bottom</h1>
+            <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 border-blue-400 border-b"></div></div>
+            <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+            <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">border-b</span>
+        </div>
+
+        <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+            <h1 class="font-bold text-center">Border-left</h1>
+            <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 border-blue-400 border-l"></div></div>
+            <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+            <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">border-l</span>
+        </div>
+
+        <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+            <h1 class="font-bold text-center">Border-opacity</h1>
+            <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 border-4 border-blue-400 border-opacity-50"></div></div>
+            <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+            <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">border-opacity-50</span>
+        </div>
+
+        <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+            <h1 class="font-bold text-center">Divide-y</h1>
+            <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center">
+                <div class="flex flex-col-reverse w-32 h-32 bg-black text-blue-400 divide-blue-400 divide-y divide-y-reverse"><div class="flex-1"></div><div class="flex-1"></div><div class="flex-1"></div></div>
+            </div>
+            <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+            <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">divide-y divide-y-reverse</span>
+        </div>
+
+        <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+            <h1 class="font-bold text-center">Divide-x</h1>
+            <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center">
+                <div class="flex flex-row-reverse w-32 h-32 bg-black text-blue-400 divide-blue-400 divide-x divide-x-reverse"><div class="flex-1"></div><div class="flex-1"></div><div class="flex-1"></div></div>
+            </div>
+            <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+            <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">divide-x divide-x-reverse</span>
+        </div>
+
+        <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+            <h1 class="font-bold text-center">Divide-opacity</h1>
+            <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center">
+                <div class="flex w-32 h-32 bg-black text-blue-400 divide-x-2 divide-blue-400 divide-opacity-75"><div class="flex-1"></div><div class="flex-1"></div><div class="flex-1"></div></div>
+            </div>
+            <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+            <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">divide-opacity-75</span>
+        </div>
+
+        <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+            <h1 class="font-bold text-center">Divide-style</h1>
+            <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center">
+                <div class="flex w-32 h-32 bg-black text-blue-400 divide-x-2 divide-blue-400 divide-dashed"><div class="flex-1"></div><div class="flex-1"></div><div class="flex-1"></div></div>
+            </div>
+            <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+            <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">divide-dashed</span>
+        </div>
+
+        <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+            <h1 class="font-bold text-center">Divide-width</h1>
+            <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center">
+                <div class="flex w-32 h-32 bg-black text-blue-400 divide-blue-400 divide-x-2"><div class="flex-1"></div><div class="flex-1"></div><div class="flex-1"></div></div>
+            </div>
+            <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+            <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">divide-x-2</span>
+        </div>
+
+        <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+            <h1 class="font-bold text-center">Object-fit</h1>
+            <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center">
+                <img class="w-32 h-32 bg-black object-contain" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='100'%3E%3Crect width='200' height='100' fill='%2360a5fa'/%3E%3Ccircle cx='100' cy='50' r='40' fill='%23f472b6'/%3E%3C/svg%3E" alt="Ejemplo">
+            </div>
+            <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+            <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">object-contain</span>
+        </div>
+
+        <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+            <h1 class="font-bold text-center">Object-position</h1>
+            <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center">
+                <img class="w-32 h-32 bg-black object-contain object-center" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='100'%3E%3Crect width='200' height='100' fill='%2360a5fa'/%3E%3Ccircle cx='100' cy='50' r='40' fill='%23f472b6'/%3E%3C/svg%3E" alt="Ejemplo">
+            </div>
+            <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+            <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">object-center</span>
+        </div>
+
+    </div>
+</body>
+</html>

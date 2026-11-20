@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformaciones y animaciones</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-200 flex items-center justify-center">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6 mt-3 mb-3 justify-center">
+
+        <a href="index.html" class="fixed top-4 left-4 z-50 bg-gray-900 text-green-400 hover:bg-gray-800 p-3 rounded-lg text-center transition">
+            Regresar
+        </a>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Transform</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 transition transform-gpu hover:rotate-45"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">transform-gpu hover:rotate-45</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Transform-style</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 perspective-[500px]"><div class="w-32 h-32 transform-3d transition hover:rotate-y-45"><div class="w-32 h-32 bg-black translate-z-8"></div></div></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">perspective-[500px] transform-3d hover:rotate-y-45</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Transform-origin</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 transition origin-center hover:rotate-45"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">origin-center hover:rotate-45</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Transform-origin-x</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 transition origin-left hover:rotate-45"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">origin-left hover:rotate-45</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Transform-origin-y</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 transition origin-top hover:rotate-45"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">origin-top hover:rotate-45</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Transform-origin-z</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 transition origin-bottom hover:rotate-45"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">origin-bottom hover:rotate-45</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Transform-box</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 transition [transform-box:border-box] hover:rotate-45"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">[transform-box:border-box] hover:rotate-45</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Scale</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 transition hover:scale-150"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">hover:scale-150</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Rotate</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 transition hover:rotate-90"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">hover:rotate-90</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Skew</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 transition hover:skew-x-6"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">hover:skew-x-6</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Translate</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 transition hover:-translate-x-4"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">hover:-translate-x-4</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Perspective</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 perspective-[500px]"><div class="w-32 h-32 bg-black transition hover:rotate-x-45"></div></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">perspective-[500px] hover:rotate-x-45</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Perspective-origin</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 perspective-[500px] perspective-origin-bottom"><div class="w-32 h-32 bg-black transition hover:rotate-x-45"></div></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">perspective-[500px] perspective-origin-bottom hover:rotate-x-45</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Backface-visibility</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 perspective-[500px]"><div class="flex items-center justify-center w-32 h-32 bg-black text-blue-400 text-5xl transition backface-visible hover:rotate-y-180">A</div></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">perspective-[500px] backface-visible hover:rotate-y-180</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Transition</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black transition hover:bg-blue-400"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">transition hover:bg-blue-400</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Transition-property</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black transition hover:bg-blue-400"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">transition hover:bg-blue-400</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Transition-duration</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black transition duration-500 hover:bg-blue-400"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">transition duration-500 hover:bg-blue-400</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Transition-timing-function</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black transition ease-in hover:bg-blue-400"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">transition ease-in hover:bg-blue-400</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Transition-delay</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black transition delay-200 hover:bg-blue-400"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">transition delay-200 hover:bg-blue-400</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animation</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 hover:animate-spin"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">hover:animate-spin</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animation-name</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 hover:animate-ping"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">hover:animate-ping</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animation-duration</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black transition duration-300 hover:bg-blue-400"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">transition duration-300 hover:bg-blue-400</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animation-delay</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black transition delay-500 hover:bg-blue-400"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">transition delay-500 hover:bg-blue-400</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animation-iteration-count</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 hover:animate-bounce"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">hover:animate-bounce</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animation-direction</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 hover:animate-bounce"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">hover:animate-bounce</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animation-fill-mode</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 hover:animate-ping"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">hover:animate-ping</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animation-play-state</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 hover:animate-spin"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">hover:animate-spin</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animation-timing-function</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 hover:animate-spin hover:[animation-timing-function:ease-out]"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">hover:animate-spin hover:[animation-timing-function:ease-out]</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animate-spin</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 hover:animate-spin"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">hover:animate-spin</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animate-pulse</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 hover:animate-pulse"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">hover:animate-pulse</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animate-bounce</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 hover:animate-bounce"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">hover:animate-bounce</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animate-bounce-x</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 transition hover:translate-x-8"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">transition hover:translate-x-8</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animate-ping</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 hover:animate-ping"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">hover:animate-ping</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animate-ping-slow</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 hover:animate-[ping_3s_cubic-bezier(0,0,0.2,1)_infinite]"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">hover:animate-[ping_3s_cubic-bezier(0,0,0.2,1)_infinite]</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animate-scale</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 transition hover:scale-125"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">transition hover:scale-125</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animate-scale-y</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 transition hover:scale-y-150"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">transition hover:scale-y-150</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animate-none</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 animate-spin hover:animate-none"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">animate-spin hover:animate-none</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animate-reverse</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 hover:animate-[spin_1s_linear_infinite_reverse]"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">hover:animate-[spin_1s_linear_infinite_reverse]</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animate-zoom</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 transition duration-500 hover:scale-110"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">transition duration-500 hover:scale-110</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animate-zoom-in</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 transition scale-50 hover:scale-100"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">transition scale-50 hover:scale-100</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animate-slide</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 transition hover:translate-x-8"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">transition hover:translate-x-8</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animate-slide-up</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 transition hover:-translate-y-8"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">transition hover:-translate-y-8</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animate-fade</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 transition hover:opacity-0"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">transition hover:opacity-0</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animate-fade-in</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 transition opacity-25 hover:opacity-100"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">transition opacity-25 hover:opacity-100</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animate-rotate</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 transition hover:rotate-180"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">transition hover:rotate-180</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animate-rotate-45</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 transition hover:rotate-45"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">transition hover:rotate-45</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animate-slide-fade</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 transition hover:translate-x-8 hover:opacity-50"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">transition hover:translate-x-8 hover:opacity-50</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animate-slide-fade-up</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 transition hover:-translate-y-8 hover:opacity-50"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">transition hover:-translate-y-8 hover:opacity-50</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animate-bounce-scale</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 hover:animate-bounce hover:scale-110"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">hover:animate-bounce hover:scale-110</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animate-bounce-scale-down</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 hover:animate-bounce hover:scale-90"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">hover:animate-bounce hover:scale-90</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animate-flip</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 transition duration-500 hover:rotate-y-180"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">transition duration-500 hover:rotate-y-180</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animate-flip-x</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 transition duration-500 hover:rotate-x-180"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">transition duration-500 hover:rotate-x-180</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animate-pulse-slow</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 hover:animate-[pulse_4s_cubic-bezier(0.4,0,0.6,1)_infinite]"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">hover:animate-[pulse_4s_cubic-bezier(0.4,0,0.6,1)_infinite]</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animate-wiggle</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 transition hover:rotate-6"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">transition hover:rotate-6</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animate-wiggle-slow</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 transition duration-1000 hover:rotate-6"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">transition duration-1000 hover:rotate-6</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animate-blink</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 hover:animate-[pulse_1s_steps(1)_infinite]"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">hover:animate-[pulse_1s_steps(1)_infinite]</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animate-blink-slow</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 hover:animate-[pulse_2s_steps(1)_infinite]"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">hover:animate-[pulse_2s_steps(1)_infinite]</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animate-slide-bounce</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 hover:translate-x-8 hover:animate-bounce"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">hover:translate-x-8 hover:animate-bounce</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animate-slide-bounce-up</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 hover:-translate-y-8 hover:animate-bounce"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">hover:-translate-y-8 hover:animate-bounce</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animate-heartbeat</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 hover:scale-125 hover:animate-pulse"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">hover:scale-125 hover:animate-pulse</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animate-heartbeat-slow</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 hover:scale-125 hover:animate-[pulse_4s_infinite]"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">hover:scale-125 hover:animate-[pulse_4s_infinite]</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animate-rubberband</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 transition hover:scale-x-125 hover:scale-y-75"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">transition hover:scale-x-125 hover:scale-y-75</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animate-rubberband-slow</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 transition duration-1000 hover:scale-x-125 hover:scale-y-75"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">transition duration-1000 hover:scale-x-125 hover:scale-y-75</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animate-head-shake</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 transition hover:translate-x-4"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">transition hover:translate-x-4</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animate-head-shake-slow</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 transition duration-1000 hover:translate-x-4"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">transition duration-1000 hover:translate-x-4</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animate-jello</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 transition hover:skew-x-12"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">transition hover:skew-x-12</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animate-jello-slow</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 transition duration-1000 hover:skew-x-12"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">transition duration-1000 hover:skew-x-12</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animate-tada</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 transition hover:scale-110 hover:rotate-3"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">transition hover:scale-110 hover:rotate-3</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animate-tada-slow</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 transition duration-1000 hover:scale-110 hover:rotate-3"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">transition duration-1000 hover:scale-110 hover:rotate-3</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animate-bounce-in-left</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 transition duration-500 -translate-x-8 hover:translate-x-0"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">transition duration-500 -translate-x-8 hover:translate-x-0</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animate-bounce-in-left-slow</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 transition duration-1000 -translate-x-8 hover:translate-x-0"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">transition duration-1000 -translate-x-8 hover:translate-x-0</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animate-bounce-in-right</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 transition duration-500 translate-x-8 hover:translate-x-0"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">transition duration-500 translate-x-8 hover:translate-x-0</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animate-bounce-in-right-slow</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 transition duration-1000 translate-x-8 hover:translate-x-0"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">transition duration-1000 translate-x-8 hover:translate-x-0</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animate-bounce-in-up</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 transition duration-500 translate-y-8 hover:translate-y-0"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">transition duration-500 translate-y-8 hover:translate-y-0</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animate-bounce-in-up-slow</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 transition duration-1000 translate-y-8 hover:translate-y-0"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">transition duration-1000 translate-y-8 hover:translate-y-0</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animate-bounce-in-down</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 transition duration-500 -translate-y-8 hover:translate-y-0"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">transition duration-500 -translate-y-8 hover:translate-y-0</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animate-bounce-in-down-slow</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 transition duration-1000 -translate-y-8 hover:translate-y-0"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">transition duration-1000 -translate-y-8 hover:translate-y-0</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animate-fade-in-left</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 transition opacity-25 -translate-x-8 hover:opacity-100 hover:translate-x-0"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">transition opacity-25 -translate-x-8 hover:opacity-100 hover:translate-x-0</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animate-fade-in-left-slow</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 transition duration-1000 opacity-25 -translate-x-8 hover:opacity-100 hover:translate-x-0"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">transition duration-1000 opacity-25 -translate-x-8 hover:opacity-100 hover:translate-x-0</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animate-fade-in-right</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 transition opacity-25 translate-x-8 hover:opacity-100 hover:translate-x-0"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">transition opacity-25 translate-x-8 hover:opacity-100 hover:translate-x-0</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animate-fade-in-right-slow</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 transition duration-1000 opacity-25 translate-x-8 hover:opacity-100 hover:translate-x-0"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">transition duration-1000 opacity-25 translate-x-8 hover:opacity-100 hover:translate-x-0</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animate-fade-in-up</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 transition opacity-25 translate-y-8 hover:opacity-100 hover:translate-y-0"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">transition opacity-25 translate-y-8 hover:opacity-100 hover:translate-y-0</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animate-fade-in-up-slow</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 transition duration-1000 opacity-25 translate-y-8 hover:opacity-100 hover:translate-y-0"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">transition duration-1000 opacity-25 translate-y-8 hover:opacity-100 hover:translate-y-0</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animate-fade-in-down</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 transition opacity-25 -translate-y-8 hover:opacity-100 hover:translate-y-0"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">transition opacity-25 -translate-y-8 hover:opacity-100 hover:translate-y-0</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animate-fade-in-down-slow</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 transition duration-1000 opacity-25 -translate-y-8 hover:opacity-100 hover:translate-y-0"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">transition duration-1000 opacity-25 -translate-y-8 hover:opacity-100 hover:translate-y-0</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animate-slide-in-left</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 transition -translate-x-8 hover:translate-x-0"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">transition -translate-x-8 hover:translate-x-0</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animate-slide-in-left-slow</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 transition duration-1000 -translate-x-8 hover:translate-x-0"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">transition duration-1000 -translate-x-8 hover:translate-x-0</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animate-slide-in-right</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 transition translate-x-8 hover:translate-x-0"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">transition translate-x-8 hover:translate-x-0</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animate-slide-in-right-slow</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 transition duration-1000 translate-x-8 hover:translate-x-0"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">transition duration-1000 translate-x-8 hover:translate-x-0</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animate-slide-in-up</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 transition translate-y-8 hover:translate-y-0"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">transition translate-y-8 hover:translate-y-0</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animate-slide-in-up-slow</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 transition duration-1000 translate-y-8 hover:translate-y-0"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">transition duration-1000 translate-y-8 hover:translate-y-0</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animate-slide-in-down</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 transition -translate-y-8 hover:translate-y-0"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">transition -translate-y-8 hover:translate-y-0</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Animate-slide-in-down-slow</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-black text-blue-400 transition duration-1000 -translate-y-8 hover:translate-y-0"></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">transition duration-1000 -translate-y-8 hover:translate-y-0</span>
+    </div>
+
+</div>
+</body>
+</html>

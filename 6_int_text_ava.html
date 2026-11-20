@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactividad y texto avanzado</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-200 flex items-center justify-center">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6 mt-3 mb-3 justify-center">
+
+        <a href="index.html" class="fixed top-4 left-4 z-50 bg-gray-900 text-green-400 hover:bg-gray-800 p-3 rounded-lg text-center transition">
+            Regresar
+        </a>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Cursor</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 p-2 bg-black text-blue-400 cursor-pointer">Pasa el cursor</div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">cursor-pointer</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Pointer-events</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><button class="w-32 h-32 bg-black text-blue-400 hover:bg-blue-400 pointer-events-none">Botón</button></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">pointer-events-none</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">User-select</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><p class="w-32 h-32 p-2 bg-black text-blue-400 select-none">Texto de ejemplo</p></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">select-none</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Resize</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><textarea class="w-32 h-32 border resize-none"></textarea></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">resize-none</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Visibility</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="invisible flex items-center justify-center w-32 h-32 bg-gray-300"><div class="w-16 h-16 bg-black visible"></div></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">visible</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Overflow</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-gray-300 overflow-hidden"><div class="w-40 h-40 bg-black"></div></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">overflow-hidden</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Overflow-x</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-gray-300 overflow-x-hidden"><div class="w-40 h-40 bg-black"></div></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">overflow-x-hidden</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Overflow-y</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 bg-gray-300 overflow-y-hidden"><div class="w-40 h-40 bg-black"></div></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">overflow-y-hidden</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Overscroll-behavior</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 overflow-y-auto bg-gray-300 overscroll-auto"><div class="h-24 bg-black"></div><div class="h-24 bg-blue-400"></div><div class="h-24 bg-pink-400"></div></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">overscroll-auto</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Overscroll-behavior-x</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 overflow-y-auto bg-gray-300 overscroll-x-auto"><div class="h-24 bg-black"></div><div class="h-24 bg-blue-400"></div><div class="h-24 bg-pink-400"></div></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">overscroll-x-auto</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Overscroll-behavior-y</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 overflow-y-auto bg-gray-300 overscroll-y-auto"><div class="h-24 bg-black"></div><div class="h-24 bg-blue-400"></div><div class="h-24 bg-pink-400"></div></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">overscroll-y-auto</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Scroll-behavior</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 overflow-y-auto bg-gray-300 scroll-behavior-auto"><div class="h-24 bg-black"></div><div class="h-24 bg-blue-400"></div><div class="h-24 bg-pink-400"></div></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">scroll-behavior-auto</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Scroll-snap-type</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 overflow-y-auto snap-y snap-mandatory bg-gray-300 snap-type-mandatory"><div class="h-24 bg-black snap-start"></div><div class="h-24 bg-blue-400 snap-start"></div><div class="h-24 bg-pink-400 snap-start"></div></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">snap-type-mandatory</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Scroll-snap-align</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 overflow-y-auto snap-y snap-mandatory bg-gray-300"><div class="h-24 bg-black snap-start snap-align-start"></div><div class="h-24 bg-blue-400 snap-start snap-align-start"></div><div class="h-24 bg-pink-400 snap-start snap-align-start"></div></div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">snap-align-start</span>
+    </div>
+
+    <div class="w-62 min-h-80 bg-white rounded-2xl shadow-lg p-5 flex flex-col justify-between gap-3">
+        <h1 class="font-bold text-center">Touch-action</h1>
+        <div class="bg-gray-100 rounded-xl p-3 flex items-center justify-center"><div class="w-32 h-32 p-2 bg-black text-blue-400 touch-action-none">Pasa el cursor</div></div>
+        <p class="text-sm text-gray-500 text-center">CLASE TAILWIND</p>
+        <span class="bg-gray-900 text-green-400 p-3 rounded-lg text-center">touch-action-none</span>
+    </div>
+
+</div>
+</body>
+</html>
